@@ -11,5 +11,5 @@ Feature: Api testing with help of Cucumber
   Scenario: Get exchange rate by currency name FAIL
     Given currency is "ZXC"
     When user try to get order by id
-    Then user receive status code 201
+    Then user receive status code 200
     And response don't equal zero
